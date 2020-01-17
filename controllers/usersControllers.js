@@ -1,23 +1,23 @@
 class UsersController {
 
     static index (req, res) {
-        res.send('index')
+        res.send('index users')
     };
 
     static create(req, res) {
-        res.send('create')
+        res.send('create users')
     };
 
     static read(req, res) {
-        res.send('read')
+        res.send('read users')
     };
 
     static update(req, res) {
-        res.send('update')
+        res.send('update users')
     };
 
     static delete(req, res) {
-        res.send('delete')
+        res.send('delete users')
     };
 }
 module.exports = UsersController;

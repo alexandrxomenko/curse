@@ -1,23 +1,25 @@
 class OrdersController {
 
     static index (req, res) {
-        res.send('index')
+        res.send('index order')
     };
 
     static create(req, res) {
-        res.send('create')
+
+        res.send('create order')
     };
 
     static read(req, res) {
-        res.send('read')
+        let ctx = req.params.id;
+        res.send('read order ' + ctx)
     };
 
     static update(req, res) {
-        res.send('update')
+        res.send('update order')
     };
 
     static delete(req, res) {
-        res.send('delete')
+        res.send('delete order')
     };
 }
 module.exports = OrdersController;

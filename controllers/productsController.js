@@ -1,23 +1,23 @@
 class ProductsController {
 
     static index (req, res) {
-        res.send('index')
+        res.send('index products')
     };
 
     static create(req, res) {
-        res.send('create')
+        res.send('create products')
     };
 
     static read(req, res) {
-        res.send('read')
+        res.send('read products')
     };
 
     static update(req, res) {
-        res.send('update')
+        res.send('update products')
     };
 
     static delete(req, res) {
-        res.send('delete')
+        res.send('delete products')
     };
 }
 module.exports = ProductsController;

@@ -1,17 +1,19 @@
-const express = require ('express');
-const ProductsRouter = express.Router();
+const ProductsRouter = require ('express').Router();
 const ProductsController = require('../controllers/productsController');
 
+const AddCRUDController = require('../static/AddCRUDController');
 
-ProductsRouter.get('/', ProductsController.index);
+AddCRUDController(ProductsRouter, ProductsController);
 
-ProductsRouter.post('/', ProductsController.create);
-
-ProductsRouter.get('/:id', ProductsController.read);
-
-ProductsRouter.put('/:id', ProductsController.update);
-
-ProductsRouter.delete('/:id', ProductsController.delete);
+// ProductsRouter.get('/', ProductsController.index);
+//
+// ProductsRouter.post('/', ProductsController.create);
+//
+// ProductsRouter.get('/:id', ProductsController.read);
+//
+// ProductsRouter.put('/:id', ProductsController.update);
+//
+// ProductsRouter.delete('/:id', ProductsController.delete);
 
 
 module.exports = ProductsRouter;
