@@ -1,4 +1,4 @@
-class ProductsController {
+class productsController {
 
     static index (req, res) {
         res.send('index products')
@@ -20,4 +20,5 @@ class ProductsController {
         res.send('delete products')
     };
 }
-module.exports = ProductsController;
+
+module.exports = productsController;

@@ -8,4 +8,4 @@ module.exports = function AddCRUDController (router, Controller){
     router.put('/:id', Controller.update);
 
     router.delete('/:id', Controller.delete);
-}
+};

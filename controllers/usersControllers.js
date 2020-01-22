@@ -1,4 +1,4 @@
-class UsersController {
+class usersController {
 
     static index (req, res) {
         res.send('index users')
@@ -20,4 +20,5 @@ class UsersController {
         res.send('delete users')
     };
 }
-module.exports = UsersController;
+
+module.exports = usersController;

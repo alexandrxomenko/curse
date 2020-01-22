@@ -1,11 +1,10 @@
-class OrdersController {
+class ordersController {
 
     static index (req, res) {
         res.send('index order')
     };
 
     static create(req, res) {
-
         res.send('create order')
     };
 
@@ -22,7 +21,8 @@ class OrdersController {
         res.send('delete order')
     };
 }
-module.exports = OrdersController;
+
+module.exports = ordersController;
 
 
 
